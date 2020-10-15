@@ -1,5 +1,26 @@
-**you can go in webhook.go and change the name where it says "username :=" of the bot and add ur own icon, put the webhook in config.txt. then run "go build webhook.go" and u will be set, you dont have to re-complie to add a new webhook just close the application and put a new webhook in config.txt and start it back up and it will work**
+# Discord Webhook Messenger
 
-*if u want to add a avatar url just add where it says ""avatar_url" :"*
+# Setup
+* Open Config.json
+* Input Webhook URL
+* Avatar URL & Webhook Username are **optional**
+
+# Usage
+```
+usage: Webhook Sender [-h|--help] -m|--message "<value>" [-t|--timeout
+                      <integer>] [-a|--amount <integer>]
+
+                      Spam a webhook with a message
+
+Arguments:
+
+  -h  --help     Print help information
+  -m  --message  Message to Send Through Webhook
+  -t  --timeout  Time Between Messages In Seconds
+  -a  --amount   Amount Of Times To Send Message
+```
+
+# Example
+``go run webhook.go -m hello -t 5 -a 50`` **Send the message "hello" every 5 seconds 50 times**
 
 **MADE BY cookie#0003 ON DISCORD**
